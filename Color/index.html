@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Guesser</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+        <div class="nav-center">
+            <h1>color guesser</h1>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>What is this color?!<span class="color">
+            </span></h2>
+            <h3>Enter an amount between 0 and 255</h3>
+            <label>RGB:</label>
+            <input type="text" id="r">
+            <input type="text" id="g">
+            <input type="text" id="b"><br>
+            <label>Amount Off: </label><br>
+            <h4 id = "percr"><span class="pr"></span></h4><br>
+            <h4 id = "percg"><span class="pg"></span></h4><br>
+            <h4 id = "percb"><span class="pb"></span></h4><br>
+            <button class="btn btn-hero" id="btn">check and retry</button>
+        </div>
+    </main>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
