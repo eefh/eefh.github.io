@@ -1,2 +1,1 @@
-# eefh.github.io
-Ethan Hasbrouck's Website
+# by Ethan Hasbrouck, 2022
