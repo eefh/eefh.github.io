@@ -69,6 +69,7 @@ body {
 @media (max-width: 540px){
   h1 {
     text-align: center;
+    font-family: 'Lexend', sans-serif;
   }
   h3 {
     color: white;
@@ -108,12 +109,14 @@ main {
 a {
     text-decoration: none;
     color: #34334f;
+    font-family: 'Lexend', sans-serif;
 }
 p {
     position: relative;
     display: block;
     font-size: 22px;
     text-align: center;
+    font-family: 'Lexend', sans-serif;
     
 }
 .eef {
@@ -124,6 +127,7 @@ p {
     height: auto;
     margin: 1vw;
     user-select: none;
+    font-family: 'Lexend', sans-serif;
 }
 @media (min-width: 800px){
     .big {
