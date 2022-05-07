@@ -69,7 +69,6 @@ body {
 @media (max-width: 540px){
   h1 {
     text-align: center;
-    font-family: 'Lexend', sans-serif;
   }
   h3 {
     color: white;
@@ -109,14 +108,12 @@ main {
 a {
     text-decoration: none;
     color: #34334f;
-    font-family: 'Lexend', sans-serif;
 }
 p {
     position: relative;
     display: block;
     font-size: 22px;
     text-align: center;
-    font-family: 'Lexend', sans-serif;
     
 }
 .eef {
@@ -127,7 +124,6 @@ p {
     height: auto;
     margin: 1vw;
     user-select: none;
-    font-family: 'Lexend', sans-serif;
 }
 @media (min-width: 800px){
     .big {
@@ -157,4 +153,47 @@ h3 {
     background: #e3eeff;
     box-shadow:  10px 10px 20px #d1dbeb,
              -10px -10px 20px #f5ffff;
+}
+
+/* PICO 8 */
+.pico-game {
+    width: 480px; 
+    height: 432px; 
+    border: none; 
+    overflow: hidden;
+    padding: 20px;
+    display: block;
+    border-radius: 2em;
+}
+@media screen and (max-width: 550px) {
+    .pico-game {
+        width: 320px;
+        height: 288px;
+    }
+}
+.game-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin: 20px 0px 0px 0px;
+    border-radius: 1em;
+    background: #e3eeff;
+    box-shadow:  18px 18px 36px #c3cddb,
+             -18px -18px 36px #ffffff;
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.game-titles {
+    color: #f55050;
+    text-shadow: 5px 5px 4px rgba(22,22,55,0.18);
+}
+.vid {
+    color: #f55050;
+}
+.description {
+    text-align: left;
+    max-width: 500px;
 }
