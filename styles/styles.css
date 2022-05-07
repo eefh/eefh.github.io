@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+html {
+    width: 100vw;
+}
 body {
   display: flex;
+  width: 100%;
   height: 100%;
   background: #e3eeff;
   color: #22223f;
   flex-direction: column;
   font-family: 'Lexend', sans-serif;
+}
+.header {
+    width: 100%;
 }
 .title {
   padding: 2vw;
@@ -36,24 +43,6 @@ body {
              -8px -8px 16px #f7ffff;
   cursor: pointer;
 }
-.dropper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 40px;
-  height: 40px;
-  margin: 5vw;
-  padding: 18px;
-  border-radius: 1em;
-  background: #e3eeff;
-  box-shadow:  10px 10px 29px #ccd6e6,
-             -10px -10px 29px #faffff;
-}
-.dropper:hover {
-    background: #e3eeff;
-    box-shadow: inset 10px 10px 29px #ccd6e6,
-            inset -10px -10px 29px #faffff;
-}
 .top-bottom {
   background: #34334f;
   width: 100%;
@@ -77,22 +66,17 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .eef {
+      margin: 100px;
+  }
 }
 @media (max-width: 540px){
-  .dropper {
-    width: 25px;
-    height: 25px;
-    padding: 15px;
-    background: #e3eeff;
-    box-shadow:  8px 8px 17px #ccd6e6,
-             -8px -8px 17px #faffff;
-  }
   h1 {
     text-align: center;
   }
   h3 {
-  color: white;
-  text-shadow: 0px 10px 8px rgba(22,22,55,0.3);
+    color: white;
+    text-shadow: 0px 10px 8px rgba(22,22,55,0.3);
   }
   .navbar {
     flex-direction: column;
@@ -103,6 +87,12 @@ body {
     flex-direction: column;
     order: 2;
     align-items: center;
+  }
+  .nav-words {
+      font-size: 18px;
+  }
+  .eef {
+      margin: 80px;
   }
 }
 
@@ -119,25 +109,53 @@ main {
   height: auto;
   width: 100%;
 }
-
+a {
+    text-decoration: none;
+    color: #34334f;
+}
 p {
-  font-size: 22px;
-  text-align: center;
+    position: relative;
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    
+}
+.eef {
+    bottom: 80px;
 }
 .big {
-  font-size: 30vw;
-  height: auto;
-  margin: 1vw;
-  user-select: none;
+    font-size: 30vw;
+    height: auto;
+    margin: 1vw;
+    user-select: none;
 }
 @media (min-width: 800px){
-  .big {
-    font-size: 20vw;
-  }
+    .big {
+        font-size: 20vw;
+    }
 }
 h3 {
-  align-self: flex-end;
-  font-size: 16vw;
-  color: white;
-  text-shadow: 0px 25px 25px rgba(22,22,55,0.5);
+    align-self: flex-end;
+    font-size: 16vw;
+    color: white;
+    text-shadow: 0px 25px 25px rgba(22,22,55,0.5);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+}
+
+.socials {
+    position: relative;
+    font-size: 80px;
+    padding: 15px 30px 15px 30px;
+    margin: 0px 50px 0px 50px;
+    border-radius: 40px;
+    background: #e3eeff;
+    box-shadow:  10px 10px 20px #d1dbeb,
+                 -10px -10px 20px #f5ffff;
+    bottom: 32px;
 }
