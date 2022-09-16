@@ -1,0 +1,62 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(29, 29, 29, 0.87);
+    border: solid rgba(179, 179, 179, 0.521) 1px;
+    padding: 20px;
+    top:66px;
+    left: -128px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: max-content;
+    color: rgb(253, 253, 253);
+}
+.clicked {
+    opacity: 100%;
+}
+.Contact > h4 {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+.Contact > hr {
+    margin: 0px 0px 10px 0px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding:2px 0px 2px 0px;
+}
+.link > .material-icons-outlined {
+    margin: 8px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.link > .material-icons {
+    font-size: 18px;
+    margin: 0px 0px 0px 8px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .Contact {
+        top: -185px;
+        left: -200px;
+        font-size: 16px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .link {
+        font-size: 13px;
+    }
+    .link > .material-icons {
+        padding: 8px;
+    }
+    .link > .material-icons-outlined {
+        font-size: 16px;
+    }
+}
